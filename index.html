@@ -66,9 +66,12 @@
               <p class="mb-4">Web Development</p>
             </div>
           </div>
-          <div class="text-center">
+          <div class="text-center p-5" onClick="document.getElementById('my-info').scrollIntoView();">
             <i class="fas fa-angle-double-down moving-arrow text-white"></i>
             <style>
+              html {
+                scroll-behavior: smooth;
+              }
               .moving-arrow {
                 animation: MoveUpDown 1s linear infinite;
                 position: absolute;
@@ -90,7 +93,7 @@
     </div>
 
 
-    <div class="site-section pb-0">
+    <div class="site-section pb-0" id="my-info">
       <div class="container pb-5 mb-5">
         <div class="row text-center">
           <div class="col-md-12 text-center">
