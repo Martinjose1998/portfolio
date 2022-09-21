@@ -1,368 +1,192 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-  <head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Martin Jose - Web Development</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
-
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.ico" sizes="16x16 24x24 36x36 48x48">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/aos.css">
-
-    <!-- MAIN CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
-  </head>
-
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
-
-    <div class="site-wrap" id="home-section">
-
-      <div class="site-mobile-menu site-navbar-target">
-        <div class="site-mobile-menu-header">
-          <div class="site-mobile-menu-close mt-3">
-            <span class="icon-close2 js-menu-toggle"></span>
-          </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/fonts/icomoon/style.css">
+</head>
+<body>
+    <section class="hero">
+        <img class="background" src="images/desktop.jpeg" width="250" height="250" alt="Desktop with a laptop and a monitor">
+        <div class="info">
+            <img class="me" src="images/me.jpg" width="250" height="250" alt="Person with a mug">
+            <h1> Martin Jose </h1>
+            <h2> Web development </h2>
         </div>
-        <div class="site-mobile-menu-body"></div>
-      </div>
-
-
-
-      <header class="site-navbar site-navbar-target" role="banner">
-
-        <div class="container">
-          <div class="row align-items-center position-relative">
-
-            <div class="col-3 ">
-              <div class="site-logo">
-              </div>
-            </div>
-
-
-          </div>
+        <div class="arrows-down">
+            <i class="fas fa-angle-double-down moving-arrow"></i>
         </div>
-
-      </header>
-
-    <div class="ftco-blocks-cover-1">
-      <div class="site-section-cover overlay" style="height:100vh;background-image: url('desktop.jpg')">
-        <div class="container" style="    height: 90%;">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-md-7 text-center">
-              <center><div style="background-image: url('images/me.jpg');width: 180px;height: 180px;background-position: center;background-repeat: no-repeat;background-size: cover;border-radius: 50%;margin-bottom: 30px;"></div></center>
-              <h1 class="mb-4 text-white">Martin Jose</h1>
-              <p class="mb-4">Web Development</p>
+    </section>
+    <section class="about">
+        <h3 class="sub"> About Me </h3>
+        <p>
+            I am a software developer with solid problem solving skills and proven experience in creating and designing software in a test-based environment.<br>
+            I help stores to make grow their brands by improving their design and performance with new technologies and clean code.
+        </p>
+    </section>
+    <section class="services">
+        <h3 class="sub"> My Services </h3>
+        <div class="services__cards">
+            <div class="card">
+                <i class="fas fa-desktop"></i>
+                <span>Web Development</span>
             </div>
-          </div>
-          <div class="text-center p-5" onClick="document.getElementById('my-info').scrollIntoView();">
-            <i class="fas fa-angle-double-down moving-arrow text-white"></i>
-            <style>
-              html {
-                scroll-behavior: smooth;
-              }
-              .moving-arrow {
-                animation: MoveUpDown 1s linear infinite;
-                position: absolute;
-                bottom: -200px;
-              }
-
-              @keyframes MoveUpDown {
-                0%, 100% {
-                  bottom: 0;
-                }
-                50% {
-                  bottom: 30px;
-                }
-              }
-            </style>
-          </div>
+            <div class="card">
+                <i class="fas fa-mobile-alt"></i>
+                <span>Responsive Design</span>
+            </div>
+            <div class="card">
+                <i class="fab fa-shopify"></i>
+                <span>E-commerce</span>
+            </div>
+            <div class="card">
+                <i class="fas fa-rocket"></i>
+                <span>Creative designs</span>
+            </div>
         </div>
-      </div>
-    </div>
-
-
-    <div class="site-section pb-0" id="my-info">
-      <div class="container pb-5 mb-5">
-        <div class="row text-center">
-          <div class="col-md-12 text-center">
-            <h2 class="heading-29190">About me</h2>
-            <p>I am a software developer with solid
-              problem solving skills and proven
-              experience in creating and designing
-              software in a test-based environment.</p>
-              <p>I help stores to make grow their brands by improving their
-                design and performance with new technologies and clean code.
-              </p>
+    </section>
+    <section class="work">
+        <h3 class="sub"> My Work </h3>
+        <div class="work__companies">
+            <h3> Prismfly - Shopify Agency </h3>
+            <div class="companies__wrapper">
+                <a href="https://nutritionfaktory.com" target="_blank" class="company">
+                    <img src="https://cdn.shopify.com/s/files/1/2640/1510/files/NF_2nd-Logo-Web_Green_v2_230x.png?v=1634663171" width="150" height="150" alt="Logo">
+                    <span> Nutrition Faktory </span>
+                </a>
+                <a href="https://www.luxyhair.com" target="_blank" class="company">
+                    <svg viewBox="0 0 494.38 251.16" width="150" height="100">
+                        <title>Luxy Hair Extensions</title>
+                        <g fill="currentColor" data-name="Layer 2">
+                          <path d="M492.26 97.13a26.55 26.55 0 00-12.48 2.66 94.86 94.86 0 00-8.89 6.37q-4.65 3.72-8.76 7.3t-7.3 6.76l-4.77 4.78q-4.51 4-10 8.89t-10.74 9.69q-5.31 4.77-10.22 8.89t-8.36 6.77q-3.18 2.65-7 5.31t-7.44 4.64a38.31 38.31 0 01-6.36 2.92c-1.86.62-3.23.67-4.12.13q-2.65-1.59.67-6.63t9.42-12.74q3.43-4 9.42-10.22t13.53-13.53q7.58-7.31 16.33-15t17.51-14.86a36.62 36.62 0 00-7.83.4 21.27 21.27 0 00-8.36 2.78 93.07 93.07 0 00-9.95 6.24q-5.44 3.85-11 8.49t-10.89 9.42q-5.31 4.78-9.55 9c-2.27 2.35-4.32 4.67-6.22 7-2.32 2-4.79 4.07-7.44 6.29s-5.49 4.56-8.23 6.77-5.36 4.29-7.83 6.23a58.45 58.45 0 01-11.94 7.57q-5.58 2.52-8.49 1.72-6.37-2.12 4-18.05a74.57 74.57 0 019-12.34 136 136 0 0112.74-12.87q4.77-4 9.55-8.23t9.29-7.69a58.85 58.85 0 018.63-5.58 16.34 16.34 0 017.29-2.12c1.6 0 2.84 0 3.72.13a6.71 6.71 0 012.39.67 4.47 4.47 0 011.33.66.73.73 0 001.06-.13c1.06-.53 1.41-1.6 1.06-3.19a7.53 7.53 0 00-1.72-4.11 6.56 6.56 0 00-4.65-2q-3.72-.27-8.36 2.52a85.36 85.36 0 00-9.16 6.37c-3 2.39-5.83 4.82-8.49 7.3s-4.69 4.33-6.1 5.57q-4.79 4-8.23 7.3t-5.84 5.44l-.8-.53a83.5 83.5 0 0011.68-14.46q3.72-6.24 4.25-10.36t-1.73-6.36a9.68 9.68 0 00-6.5-2.53q-3.72-.52-10.61 2.79t-17.25 13.14q-6.64 6.36-15.4 14.33c-3.72 3.38-7.29 6.67-10.8 9.91-.19.15-.46.29-.61.44q-5.56 4.78-12.47 10.88T289 159.24q-2.39 1.86-6 4.38t-7.17 4.64a59.38 59.38 0 01-6.63 3.45q-3.06 1.33-4.65.53-2.93-1.32.67-6.63t9.68-13q3.45-4.23 9-10.48t12.61-13.53q7-7.31 15.26-15.27t16.74-15.93a30.41 30.41 0 00-7.43.53 20 20 0 00-6.9 2.12 89.25 89.25 0 00-9.29 6.64q-5.31 4.25-10.88 9.16t-10.88 10.08q-5.31 5.17-9.29 9.16l-4.78 4.77q-3.18 3.19-6.9 6.77t-7.43 6.9l-6.1 5.44q-2.92 2.13-6.64 4.78t-7.43 4.78a52.44 52.44 0 01-6.76 3.31c-2 .8-3.59.94-4.65.4q-2.91-1.32.53-6.63t9.56-13q3.44-4.23 9.42-10.48t13.4-13.4q7.43-7.17 16.06-14.87T289.5 99c-.89 0-2.08.05-3.58.14a42.85 42.85 0 00-4.64.53 33.23 33.23 0 00-4.52 1.06 24.54 24.54 0 00-3.71 1.46q-4 2.38-9.43 6.23t-11 8.5q-5.56 4.64-10.88 9.42t-9.29 8.76a129.5 129.5 0 00-12.09 14.9 44.53 44.53 0 00-6.5 13c-1.41 4.08-1.54 7.39-.4 10s3.94 3.85 8.37 3.85a18.34 18.34 0 006.63-1.47 46.86 46.86 0 007.56-3.84q3.85-2.4 7.57-5c2.47-1.76 4.77-3.45 6.9-5q1.59-1.32 4.11-3.32a58.55 58.55 0 005.18-4.64q-5.58 9.56-4.91 16.19t9.42 7.17a15.87 15.87 0 006.1-1.47 54.73 54.73 0 007.17-3.71c2.47-1.5 4.95-3.19 7.43-5l6.9-5.18q4.25-3.45 11.81-9.68c2.71-2.24 5.25-4.43 7.68-6.59.12-.08.31-.08.41-.18q8.49-8 17.38-16.06t16.33-15A77.69 77.69 0 01352 108a53.16 53.16 0 016.24-4.38 15.87 15.87 0 015.3-2.13 4.74 4.74 0 014 .93 4.23 4.23 0 01.4 3.32 19.86 19.86 0 01-1.86 5.18 46.16 46.16 0 01-3.84 6.23 72 72 0 01-5.31 6.5q-4 4.53-8.23 8.9t-8.23 8.36q-4 4-7.16 7c-2.13 2-3.72 3.49-4.78 4.38a115.59 115.59 0 01-16.19 12.07q-7.69 4.65-12.47 4.65a11.42 11.42 0 01-4-.53l-2.66-1.06a14.18 14.18 0 00-1.21-1.02 1.09 1.09 0 00-1.2-.26 4.31 4.31 0 00-1.45 2.65 6.36 6.36 0 00.13 3.45 7.83 7.83 0 002.25 3.19q1.74 1.59 5.71 1.59 7.17 0 15.53-6.37a223.75 223.75 0 0017.64-15.13c1.77-1.59 3.59-3.31 5.44-5.17l4.91-4.91 1.07.8a84.17 84.17 0 00-6.64 9.81 36.7 36.7 0 00-4 9.29 11.63 11.63 0 00.27 7.44Q333 176 337.53 177q5.58 1.32 13.67-2.39a106 106 0 0018.44-11.41q1.86-1.33 5.18-4.11L381 154a40.68 40.68 0 00-4.28 9.91q-1.46 5.72.53 9.29t8.09 3.59q5 0 12.61-4.52a124.33 124.33 0 0014.46-10.08q4.78-3.72 8-6.37c2.13-1.77 4.42-3.8 6.9-6.11q-7.69 8.23-15.92 16.72T395 182.86q-8.1 8-15.53 14.73t-13.27 11.28q-9 7.15-19.37 14.19a169.51 169.51 0 01-21.63 12.48 130.65 130.65 0 01-23.2 8.62 78.63 78.63 0 01-23.89 2.66q-16.45-.8-22.56-9.42t-2.92-20.83a37 37 0 014.62-10.57 55.18 55.18 0 017.83-9.82c1.06-1.06 1.94-1.95 2.65-2.65s.89-1.33.53-1.86a2.27 2.27 0 00-2.79-.27 22.09 22.09 0 00-3.84 2.39 30.35 30.35 0 00-3.72 3.85c-.45.54-.9 1.13-1.35 1.71l-.81.81a35.29 35.29 0 01-16.85 11.68 77.47 77.47 0 01-23.49 3.16 83.24 83.24 0 01-22.16-3.45 253.94 253.94 0 01-25.08-8.55q-12.73-5-24.95-10.88t-22-10.88a169.28 169.28 0 0015.12-8.63q7.69-4.9 15.93-11a104.47 104.47 0 0033.84-12.88 175.65 175.65 0 0030.91-23q18.06-16.45 27.61-34a97.82 97.82 0 0011.68-35q11.94-12.74 22.42-22.55a169.36 169.36 0 0120.44-16.59A91.6 91.6 0 01318.78 7.3a56.57 56.57 0 0119.78-3.58 51.48 51.48 0 0117.38 3.18q8.9 3.18 14.46 13.27a18.15 18.15 0 011.6 4 1.19 1.19 0 001.59 1.06 3.35 3.35 0 002.12-2.65 12.15 12.15 0 000-5 16.65 16.65 0 00-4.78-7.7 31 31 0 00-8.22-5.36A47.9 47.9 0 00352 1.14 62.88 62.88 0 00340.15 0q-19.9 0-40.07 10.62T255.75 43q-2.12-10.35-10.35-19.24t-24.15-11.82a114.77 114.77 0 00-31.18-.53 147.77 147.77 0 00-33 7.83 193.92 193.92 0 00-33.75 16.06 251.5 251.5 0 00-33.17 23.62A201.88 201.88 0 0048 107.75a146.9 146.9 0 00-11.81 23.62 85.73 85.73 0 00-5.44 20.44q-12.48 1.38-20.84 6.93T.18 175.43a14.21 14.21 0 00.53 6.5 13.36 13.36 0 003.18 6 5.83 5.83 0 01.93 1.2q.4.66.93.39c.71-.17.8-.79.26-1.85a23.62 23.62 0 01-2.12-5.44 11.51 11.51 0 01-.26-5.44 18.19 18.19 0 018.62-13.54 44.21 44.21 0 0117.92-5.84A38.83 38.83 0 0032.42 174a31.38 31.38 0 007.83 11.68 34.07 34.07 0 0011.68 7 45.58 45.58 0 0013.8 2.65q22.81 1.32 49.1-11.14 13 8 25.08 15.39a259.92 259.92 0 0024 13.14 155.86 155.86 0 0023.88 9.15 88.48 88.48 0 0024.68 3.45A64.4 64.4 0 00230 223.2a52.52 52.52 0 0012.87-5.44 45.36 45.36 0 005.82-4.23 30.74 30.74 0 00-.87 3q-3.72 15.65 5.17 24.68t26.41 9.82a93.39 93.39 0 0022.69-1.86 143.53 143.53 0 0024.81-7.43 202.68 202.68 0 0025.75-12.48 224.1 224.1 0 0025.74-17.25q9-7.16 17.38-14.86t15.53-15.13q7.17-7.42 13.4-14.2t11-12.07q3.18-3.45 9-9.69T457.22 133q6.63-6.91 13.27-13.68t11.68-11.54q3.7-3.45 6-5.31a42.79 42.79 0 014.38-3.18 13.67 13.67 0 011.33-.8.84.84 0 00.53-.79c-.03-.39-.74-.57-2.15-.57zm-254.42-1.48a166.84 166.84 0 01-24.82 28 171.14 171.14 0 01-25.21 19.24 119.53 119.53 0 01-28.66 13.4 278.94 278.94 0 0025.61-21.89q12.87-12.34 26.41-27.47 11.4-12.74 21.36-24.15t19.24-21.23a85 85 0 01-13.93 34.1zm-174 96a39.43 39.43 0 01-11.81-2.92 29.7 29.7 0 01-10-6.77 29.13 29.13 0 01-6.5-10.75 35.3 35.3 0 01-1.73-14.33h12.56a102.08 102.08 0 0125.74 5.57 167.6 167.6 0 0127.07 12.74q2.11 1.34 4.38 2.52t4.38 2.53q-23.1 12.44-44.06 11.38zm49.37-14.34a55 55 0 01-5.18-2.65q-2.27-1.32-4.38-2.39-5.57-2.91-12.34-6.38t-14.6-6.58a140.18 140.18 0 00-16-5.29 87.37 87.37 0 00-16.46-2.71h-9.57a71.26 71.26 0 016.9-18.58 163.73 163.73 0 0113.53-21.63 240.28 240.28 0 0119.24-23 280.88 280.88 0 0124-22.56 315.47 315.47 0 0131-23.22 210.06 210.06 0 0130.92-16.85 135.24 135.24 0 0130.12-9.29 88.34 88.34 0 0128.93-.53 43.33 43.33 0 0113.54 4 36 36 0 019.82 7 34.28 34.28 0 016.37 9.16 36.85 36.85 0 013.18 10.35q-12.21 11.15-25.61 25.08t-28.72 30.67q-15.9 17.27-30.66 31.85a353.28 353.28 0 01-28.79 25.75 48.66 48.66 0 01-15-2.26 28.52 28.52 0 01-11.68-6.88 24.21 24.21 0 01-6.36-11.78q-1.74-7.16.92-16.69a68.26 68.26 0 016.67-15.22 105.06 105.06 0 0110.62-15.09 132.93 132.93 0 0113.53-13.9 139 139 0 0115.39-11.92 158.18 158.18 0 0124.15-13.1q13-5.7 23.62-5.7a41.37 41.37 0 014.65.27 18.92 18.92 0 014.38 1.06 7.85 7.85 0 011.32.93c.54.44 1 .49 1.33.13.35-.53.22-1.08-.4-1.67l-1.46-1.37a28.34 28.34 0 00-10.61-1.73 61.75 61.75 0 00-11.94 1.32 109.68 109.68 0 00-13.67 3.71 132.13 132.13 0 00-13.8 5.56 91.47 91.47 0 00-12.61 7.15 133.65 133.65 0 00-15.39 12.58 130.16 130.16 0 00-13.4 14.69 109.56 109.56 0 00-10.35 15.89 68.85 68.85 0 00-6.24 15.63q-2.39 9.52-.8 17.08a29.4 29.4 0 006.11 13 30.4 30.4 0 0011.41 8.47 44.43 44.43 0 0015.39 3.58q-5.31 4-10.48 7.56a119.46 119.46 0 01-10.51 6.47z" fill="#343434" data-name="Layer 1"></path>
+                        </g>
+                      </svg>
+                    <span> Luxy Hair </span>
+                </a>
+                <a href="https://www.simplemodern.com" target="_blank" class="company">
+                    <img src="https://cdn.shopify.com/s/files/1/1100/3842/t/274/assets/logo-new-small.png?v=47720340104286342851645116616" width="150" height="150" alt="Logo">
+                    <span> Simple Modern </span>
+                </a>
+                <a href="https://maxeffortmuscle.com" target="_blank" class="company">
+                    <img src="https://cdn.shopify.com/s/files/1/0011/3724/6284/files/Untitled-1Artboard-1_7cb67d07-ebfe-45d1-adb2-1dbdeeebcf4c_130x.png?v=1646234617" width="150" height="150" alt="Logo">
+                    <span> Max Effort Muscle </span>
+                </a>
+                <a href="https://www.redlandcotton.com" target="_blank" class="company">
+                    <img src="https://cdn.shopify.com/s/files/1/1777/6857/files/RLC-Logo-Vertical-Single_180x.jpg?v=1610972180" width="150" height="150" alt="Logo">
+                    <span> Red Land Cotton </span>
+                </a>
+                <a href="https://www.shamansmarket.com" target="_blank" class="company">
+                    <img src="https://cdn.shopify.com/s/files/1/2086/1263/files/logo_140x.webp?v=1648220975" width="150" height="150" alt="Logo">
+                    <span> Shamans Market </span>
+                </a>
+                <a href="https://www.notconsumed.com" target="_blank" class="company">
+                    <img src="https://www.notconsumed.com/wp-content/uploads/2019/04/cropped-logo-with-trademark-4_11_19.png" width="150" height="150" alt="Logo">
+                    <span> Not Consumed </span>
+                </a>
+                <a href="https://www.hearnshobbies.com" target="_blank" class="company">
+                    <img src="https://cdn.shopify.com/s/files/1/1008/9754/files/HH2020Logo-ICON-BrnCrm_100x@2x.jpg?v=1609804921" width="150" height="150" alt="Logo">
+                    <span> Hearns Hobbies </span>
+                </a>
             </div>
-          <style>
-            .skill {
-              transition: 0.5s;
-            }
-            .skill:hover {
-              opacity: 70%;
-            }
-          </style>
         </div>
+        <div class="work__companies">
+            <h3> Innovate Group - Shopify Agency </h3>
+            <div class="companies__wrapper">
+                <a href="https://shuuk.com" target="_blank" class="company">
+                    <img src="https://cdn.shopify.com/s/files/1/0498/1692/8420/files/Shuuk_-_logotipo_2021_140x@2x.png?v=1620051934" width="150" height="150" alt="Logo">
+                    <span> Shuuk </span>
+                </a>
+                <a href="https://www.colchonesgani.com.ar" target="_blank" class="company">
+                    <img src="https://cdn.shopify.com/s/files/1/0069/7797/8427/files/icon_logo_2x_5e7dd190-f441-4129-b7d4-b7cbec57d119_170x@2x.png?v=1625579998" width="150" height="150" alt="Logo">
+                    <span> Colchones Gani </span>
+                </a>
+                <a href="https://www.fdv.cl" target="_blank" class="company">
+                    <img src="https://cdn.shopify.com/s/files/1/0564/0971/8978/files/logo-fdv-negro_140x.png?v=1619445434" width="150" height="150" alt="Logo">
+                    <span> FDV </span>
+                </a>
+                <a href="https://thechemistlook.com" target="_blank" class="company">
+                    <img src="https://cdn.shopify.com/s/files/1/0113/4821/3818/t/84/assets/new_logo_tcl_medium.png?v=180598614972073105221659649075" width="150" height="150" alt="Logo">
+                    <span> The Chemist Look </span>
+                </a>
+            </div>
         </div>
-      </div>
-    </div>
-
-    <div class="site-section bg-light">
-      <div class="container">
-        <div class="row mb-3">
-          <div class="col-md-3 mx-auto text-center">
-            <h2 class="heading-29190">My Services</h2>
-          </div>
+        <div class="work__companies">
+            <h3> Sysgarage - Agency </h3>
+            <div class="companies__wrapper">
+                <a href="https://www.wineryofeurope.com" target="_blank" class="company">
+                    <img src="https://cdn.shopify.com/s/files/1/0496/0455/9016/files/winery-of-europe-logo-gold.png?v=1612381833" width="150" height="150" alt="Logo">
+                    <span> Winery of Europe </span>
+                </a>
+            </div>
         </div>
-        <div class="row">
-          <div class="col-md-8 col-lg-3">
-            <div class="service-29128 text-center">
-              <span class="d-block wrap-icon">
-                <i class="fas fa-desktop" style="font-size: 25px;"></i>
-              </span>
-              <h3>Web Development</h3>
-              <p></p>
+        <div class="work__companies">
+            <h3> As a Freelancer </h3>
+            <div class="companies__wrapper">
+                <a href="https://latinafy.com" target="_blank" class="company">
+                    <img src="https://cdn.shopify.com/s/files/1/0407/0647/4148/files/Logo_desktop_300x.png?v=1594402550" width="150" height="150" alt="Logo">
+                    <span> Latinafy </span>
+                </a>
             </div>
-          </div>
-          <div class="col-md-8 col-lg-3">
-            <div class="service-29128 text-center">
-              <span class="d-block wrap-icon">
-                <i class="fas fa-mobile-alt" style="font-size: 25px;"></i>
-              </span>
-              <h3>Responsive Design</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="col-md-8 col-lg-3">
-            <div class="service-29128 text-center">
-              <span class="d-block" style="margin-bottom: 25px;">
-                <i class="fab fa-shopify" style="font-size: 30px;"></i>
-              </span>
-              <h3>E-commerce</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="col-md-8 col-lg-3">
-            <div class="service-29128 text-center">
-              <span class="d-block wrap-icon">
-                <i class="fas fa-rocket" style="font-size: 25px;"></i>
-              </span>
-              <h3>Modern Solutions</h3>
-              <p></p>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-
-    <div class="site-section">
-      <div class="container">
-        <div class="row mb-3">
-          <div class="col-md-3 mx-auto text-center">
-            <h2 class="heading-29190">My work</h2>
-          </div>
+    </section>
+    <section class="data">
+        <div class="data-items__wrapper">
+            <div class="data__item">
+                <i class="icon-smile-o"></i>
+                <div class="item__number">
+                    <span> 20+ </span>
+                    <span> Happy Clients </span>
+                </div>
+            </div>
+            <div class="data__item">
+                <i class="icon-coffee"></i>
+                <div class="item__number">
+                    <span> 756 </span>
+                    <span> Cup of coffe </span>
+                </div>
+            </div>
+            <div class="data__item">
+                <i class="icon-code"></i>
+                <div class="item__number">
+                    <span> 56,978 </span>
+                    <span> Lines of code </span>
+                </div>
+            </div>
+            <div class="data__item">
+                <i class="icon-desktop_mac"></i>
+                <div class="item__number">
+                    <span> 24+ </span>
+                    <span> Project Finish </span>
+                </div>
+            </div>
         </div>
-        <div class="row mb-3">
-          <div class="col-12 mx-auto text-center">
-            <h3 class="">As freelancer</h3>
-          </div>
-        </div><div class="row" style="justify-content: center;">
-          <div class="col-md-8 col-lg-3">
-            <a href="https://www.latinafy.com" target="_blank">
-            <div class="service-29128 text-center">
-              <span class="d-block wrap-icon" style="height: 130px;">
-                <div style="background-position:center;background-repeat:no-repeat;height:150px;background-size:contain;background-image: url('https://cdn.shopify.com/s/files/1/0407/0647/4148/files/Logo_desktop_300x.png?v=1594402550');"></div>
-                <img src="" alt="">
-              </span>
-              <h3>Latinafy</h3>
-              <p></p>
-            </div>
-          </a>
-          </div>
-          
-          
-        </div>
-      <div class="row mb-3 mt-3">
-          <div class="col-12 mx-auto text-center mt-4" style="
-    width: 100%;
-">
-            <h3 class="">For Sysgarage (Agency)</h3>
-          </div>
-        </div><div class="row" style="justify-content: center;">
-          <div class="col-md-8 col-lg-3">
-            <a href="https://www.wineryofeurope.com" target="_blank">
-            <div class="service-29128 text-center">
-              <span class="d-block wrap-icon" style="height: 130px;">
-                <div style="background-position:center;background-repeat:no-repeat;height:150px;background-size:contain;background-image: url('https://cdn.shopify.com/s/files/1/0496/0455/9016/files/winery-of-europe-logo-gold.png?v=1612381833');"></div>
-              </span>
-              <h3>Winery of Europe</h3>
-              <p></p>
-            </div>
-          </a>
-          </div>
-          
-          
-        </div>
-        <div class="row mb-3 mt-3">
-          <div class="col-12 mx-auto text-center mt-4" style="
-    width: 100%;
-">
-            <h3 class="">For Innovate Group (Shopify Agency)</h3>
-          </div>
-        </div>
-        <div class="row" style="justify-content: center;">
-          <div class="col-md-8 col-lg-3">
-            <a href="https://www.shuuk.com" target="_blank">
-            <div class="service-29128 text-center">
-              <span class="d-block wrap-icon" style="height: 130px;">
-                <div style="background-position:center;background-repeat:no-repeat;height:150px;background-size:contain;background-image: url('https://cdn.shopify.com/s/files/1/0498/1692/8420/files/Shuuk_-_logotipo_2021_140x@2x.png?v=1620051934');"></div>
-              </span>
-              <h3>Shuuk</h3>
-              <p></p>
-            </div>
-          </a>
-          </div>
-          <div class="col-md-8 col-lg-3">
-            <a href="">
-            <div class="service-29128 text-center">
-              <span class="d-block wrap-icon" style="height: 130px;">
-                <div style="background-position:center;background-repeat:no-repeat;height:150px;background-size:contain;background-image: url('https://cdn.shopify.com/s/files/1/0564/0971/8978/files/logo-fdv-negro_140x@2x.png?v=1619445434');"></div>
-              </span>
-              <h3>FDV Kitchen Center</h3>
-              <p></p>
-            </div>
-          </a>
-          </div>
-          <div class="col-md-8 col-lg-3">
-            <a href="https://www.colchonesgani.com.ar" target="_blank">
-            <div class="service-29128 text-center">
-              <span class="d-block wrap-icon" style="height: 130px;">
-                <div style="background-position:center;background-repeat:no-repeat;height:150px;background-size:contain;background-image: url('https://cdn.shopify.com/s/files/1/0069/7797/8427/files/icon_logo_2x_5e7dd190-f441-4129-b7d4-b7cbec57d119_170x@2x.png?v=1625579998');"></div>
-              </span>
-              <h3>Colchones Gani</h3>
-              <p></p>
-            </div>
-          </a>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-
-    <div class="site-section bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-            <div class="fact-39281 d-flex align-items-center">
-              <div class="wrap-icon mr-3">
-                <span class="icon-smile-o"></span>
-              </div>
-              <div class="text">
-                <span class="d-block">7</span>
-                <span>Happy Clients</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-            <div class="fact-39281 d-flex align-items-center">
-              <div class="wrap-icon mr-3">
-                <span class="icon-coffee"></span>
-              </div>
-              <div class="text">
-                <span class="d-block">730</span>
-                <span>Cup of Coffee</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-            <div class="fact-39281 d-flex align-items-center">
-              <div class="wrap-icon mr-3">
-                <span class="icon-code"></span>
-              </div>
-              <div class="text">
-                <span class="d-block">36,892</span>
-                <span>Lines of Code</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-            <div class="fact-39281 d-flex align-items-center">
-              <div class="wrap-icon mr-3">
-                <span class="icon-desktop_mac"></span>
-              </div>
-              <div class="text">
-                <span class="d-block">7</span>
-                <span>Project Finish</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer class="site-section-cover overlay site-footer pt-5" id="contact-info" style="background-image:url('https://www.turismotastil.com.ar/wp-content/uploads/2020/04/Bariloche.jpg');background-size: cover;
-    background-position: center;padding: 0px!important;">
-      <div class="container">
-        <div class="row" style="align-items: center;padding-bottom: 150px;">
-          <div class="col-lg-3">
-            <h2 class="footer-heading mb-3 text-white">Info</h2>
-                <p>Location: San Carlos de Bariloche, Rio Negro, Argentina.</p>
-                <p>Whatsapp: +543364260251</p>
-                <p>E-mail: mj260698@gmail.com</p>
-          </div>
-          <div class="col-lg-8 ml-auto">
-            <div class="row">
-              <div class="col-lg-6 ml-auto">
-                <h2 class="footer-heading mb-4 text-white">Quick Links</h2>
-                <ul class="list-unstyled">
-                  <li><a href="https://www.linkedin.com/in/martin-jose-413a161a4/" target="_blank">LinkedIn</a></li>
+    </section>
+    <footer class="footer">
+        <img src="images/footer_4.jpeg" width="1200" height="600" alt="City">
+        <div class="footer__info">
+            <div class="column">
+                <h3> Info </h3>
+                <ul>
+                    <li> Location: San Carlos de Bariloche, Rio Negro, Argentina. </li>
+                    <li> E-mail: mj260698@gmail.com </li>
                 </ul>
-              </div>
-              <div class="col-lg-6">
-
-                <h2 class="footer-heading mb-4 text-white">Newsletter</h2>
-                <form action="#" class="d-flex" class="subscribe">
-                  <input type="text" class="form-control mr-3" placeholder="Email">
-                  <input type="submit" value="Send" class="btn btn-primary">
-                </form>
-              </div>
-
             </div>
-          </div>
+            <div class="column">
+                <h3> Quick Links </h3>
+                <ul>
+                    <li> <a href="https://www.linkedin.com/in/martin-jose-413a161a4/" target="_blank"> Linkedin </a> </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </footer>
-
-    </div>
-
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/jquery-migrate-3.0.0.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/bootstrap-datepicker.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/aos.js"></script>
-
-    <script src="js/main.js"></script>
-
-  </body>
-
+    <script src="index.js"></script>
+</body>
 </html>
