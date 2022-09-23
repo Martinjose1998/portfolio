@@ -3,4 +3,4 @@ scrollDown.addEventListener('click', () => {
     document.querySelector('.about').scrollIntoView();
 });
 
-/* Test 3 */
+/* Test 4 */
