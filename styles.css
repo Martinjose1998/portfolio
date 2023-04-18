@@ -91,10 +91,11 @@ section.about {
 section.about h3 {
     font-size: 1.7rem;
     font-weight: 400;
+    margin-top: 0;
 }
 section.about p {
     text-align: center;
-    line-height: 3;
+    line-height: 2.5;
     font-size: 1rem;
     max-width: 1200px;
     color: #364d59;
